@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="countdown-container">
+    <span id="count">3</span>
+  </div>
+
+  <script>
+    let count = 3;
+    const display = document.getElementById("count");
+
+    const interval = setInterval(() => {
+      count--;
+      display.textContent = count;
+
+      if (count === 0) {
+        clearInterval(interval);
+        window.location.href = "pictures.html";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
