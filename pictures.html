@@ -32,7 +32,17 @@
     <img src="images/spa2.jpg">
     <img src="images/spa1.jpg">
 
+    <a href="index.html" id="return-btn">Retour</a>
   </div>
   
+  <script>
+    document.getElementById('return-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = 'index.html';
+      }, 500); // Durée de l'animation en millisecondes
+    });
+  </script>
 </body>
 </html>
