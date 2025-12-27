@@ -12,8 +12,17 @@
     <p>Coucou mon amour. Voici un petit site que j'ai crée pour toi 😊</p>
     <p>Tu pourras en décourvir un peu plus sur ce qui nous attend à l'hôtel, avec des petites photos</p>
     <p>Prête ?</p>
-    <a href="pictures.html">Découvrir</a>
+    <a href="pictures.html" id="discover-btn">Découvrir</a>
   </div>
   
+  <script>
+    document.getElementById('discover-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = 'pictures.html';
+      }, 500); // Durée de l'animation en millisecondes
+    });
+  </script>
 </body>
 </html>
