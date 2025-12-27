@@ -80,6 +80,7 @@ a:hover {
   color: #ee9ca7;
   margin-bottom: 30px;
   font-size: clamp(1.8rem, 5vw, 2.5rem);
+  white-space: nowrap;
 }
 
 .pictures-container h2 {
